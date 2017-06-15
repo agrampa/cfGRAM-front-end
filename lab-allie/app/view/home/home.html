@@ -1,0 +1,13 @@
+<section>
+  <h1>{{ homeCtrl.title }}</h1>
+  <a href="/#!/home">Home</a>
+  <a href="/#!/signup">Sign-up</a>
+  <create-gallery></create-gallery>
+  <input type="number" ng-model="homeCtrl.galleryLimit" placeholder="100">
+  <input type="text" placeholder="Search for a gallery" ng-model="homeCtrl.input">
+  <ul>
+    <gallery-item ng-repeat="item in homeCtrl.galleries | fuzzySearch : homeCtrl.input" gallery="item"></gallery-item>
+  </ul>
+  
+  <thumbnail-container gallery="homeCtrl.currentGallery"></thumbnail-container>
+</section>

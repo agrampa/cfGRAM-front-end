@@ -1,0 +1,47 @@
+// ** VARS ** //
+$brand-primary: #7C7A7A;
+$brand-background: #444444;
+$brand-links: #000000;
+$brand-text: #ffffff;
+$padding: 3%;
+$margin: 0px auto;
+$brand-main-font: 'Raleway', sans-serif;
+$brand-secondary-font: "Copperplate";
+
+// ** BASE STYLES ** //
+main {
+  background-color: $brand-background;
+  padding: $padding;
+  margin: $margin;
+}
+
+a {
+  color: $brand-text;
+  size: 1.5em;
+  font-family: $brand-secondary-font;
+  &:hover {
+    color: $brand-links;
+  }
+}
+
+h1 {
+  color: $brand-primary;
+  font-family: $brand-main-font;
+  padding-top: 0;
+  size: 24px;
+}
+
+img {
+  height: 2em;
+}
+
+#welcome {
+  color: $brand-text;
+  font-size: 3em;
+}
+
+.main-header {
+  background-color: $brand-background;
+  font-family: $brand-main-font;
+  size: 24px;
+}
